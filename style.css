@@ -55,7 +55,6 @@ h1 {
     display: block;
 }
 
-/* Responsive images for phones */
 @media (max-width: 768px) {
     .gallery {
         flex-direction: column;
