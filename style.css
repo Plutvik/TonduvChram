@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 20px;
     background-color: #f8f8f8;
+    color: #333;
 }
 
 .container {
@@ -15,6 +16,25 @@ h1 {
     margin-bottom: 20px;
 }
 
+/* Contact styles */
+.contact {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+}
+
+.contact a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.contact a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Gallery styles */
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -24,6 +44,7 @@ h1 {
 
 .gallery_link {
     display: block;
+    flex: 1 1 auto;
 }
 
 .gallery_img {
@@ -34,10 +55,20 @@ h1 {
     display: block;
 }
 
-.gallery_img:hover {
-    transform: scale(1.01);
-}
+/* Responsive images for phones */
+@media (max-width: 768px) {
+    .gallery {
+        flex-direction: column;
+        gap: 10px;
+    }
 
-a {
-    color: inherit;
+    .gallery_img {
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+    }
+
+    .gallery_link {
+        width: 100%;
+    }
 }
