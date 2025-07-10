@@ -17,9 +17,9 @@ h1 {
 
 .gallery {
     display: flex;
-    flex-wrap: wrap;       /* allows items to wrap to next line */
-    gap: 15px;             /* space between items */
-    justify-content: flex-start;  /* align items to the left */
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: flex-start;
 }
 
 .gallery_link {
@@ -27,8 +27,8 @@ h1 {
 }
 
 .gallery_img {
-    width: 250px;          /* fixed width for each image */
-    height: auto;
+    width: auto;
+    height: 250px;
     border-radius: 2px;
     transition: transform 0.2s;
     display: block;
