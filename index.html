@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tondův Chrám</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Tondův Chrám</h1>
+        <div id="gallery" class="gallery"></div>
+
+<script>
+  const images = [
+    'images/IMG_20250604_185200847.jpg',
+    'images/IMG_20250604_185209113.jpg',
+    'images/IMG_20250604_185245630.jpg',
+    'images/IMG_20250604_185251269.jpg',
+    'images/IMG_20250604_185319323.jpg',
+  ];
+
+  const gallery = document.getElementById('gallery');
+
+  images.forEach(image => {
+    const link = document.createElement('a');
+    link.href = image;
+    link.target = '_blank';
+    link.classList.add('gallery_link');
+
+    const img = document.createElement('img');
+    img.src = image;
+    img.alt = 'image';
+    img.classList.add('gallery_img');
+
+    link.appendChild(img);
+    gallery.appendChild(link);
+  });
+</script>
+</body>
+
+</html>
